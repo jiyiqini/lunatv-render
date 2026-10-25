@@ -6,10 +6,10 @@ services:
     dockerfilePath: ./Dockerfile
     healthCheckPath: /
     envVars:
-      - key: USERNAME
-        value: testa2015
-      - key: PASSWORD
-        value: testa2015abc
+     # - key: USERNAME
+     #   value: testa2015
+     # - key: PASSWORD
+     #   value: testa2015abc
       - key: NEXT_PUBLIC_STORAGE_TYPE
         value: upstash
       - key: UPSTASH_URL
