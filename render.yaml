@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: lunatv
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: USERNAME
+        value: testa2015
+      - key: PASSWORD
+        value: testa2015abc
+      - key: NEXT_PUBLIC_STORAGE_TYPE
+        value: upstash
+      - key: UPSTASH_URL
+        value: https://quiet-sailfish-110969.upstash.io
+      - key: UPSTASH_TOKEN
+        value: gQAAAAAAAbF5AAIgcDE4ZTA0NDA1M2UwZDI0ZGI3YTk0MjU0MGY5N2UxNjI1Ng
+      - key: DISABLE_HERO_TRAILER
+        value: "true"
